@@ -46,7 +46,7 @@ function wstd_classloader( $class ) {
 	 */
 	static $app;
 	if ( ! isset( $app ) ) {
-		$app = TEMPLATEPATH . '/app/';
+		$app = TEMPLATEPATH . '/app';
 	}
 	$strings = explode( '\\', $class );
 	if ( $n = count( $strings ) - 1 ) {
