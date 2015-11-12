@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+.calHeaderRow {
+  margin-top: 25px;
+}
+#calBody {
+  text-align: center;
+  letter-spacing: 0;
+}
+.calBox, .calHeaderBox, .calDate, .calBoxInner {
+	box-sizing: border-box;
+}
+.calRow {
+  padding-bottom: 20px;
+}
+.calRow, .calHeaderRow {
+  margin-bottom: 13px;
+  clear: both;
+  border-bottom: 1px solid #eee;
+  /*-webkit-box-shadow: 0 4px 7px -7px #777;
+  -moz-box-shadow: 0 4px 7px -7px #777;
+  box-shadow: 0 4px 7px -7px #777;*/
+}
+.calHeaderBox {
+  text-align: center;
+	font-weight: bold;
+	color: gray;
+	text-shadow: 0 1px 0 rgba(128, 128, 128, 0.25);
+	padding: 10px 0;
+}
+.calBox, .calHeaderBox {
+  float: left;
+  width: 13.7857142857142857142857%;
+  margin-left: 0.5%;
+}
+.calRow:last-child {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.calBox {
+  min-height: 100px;
+  /*overflow: hidden;*/
+}
+@media (max-width: 640px) {
+  .calBox {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 3px;
+  }
+  .calHeaderRow, .calHeaderBox {
+    display: none;
+  }
+}
+.calBox:first-child, .calHeaderBox:first-child {
+  margin-left: 0;
+}
+.calBoxInner {
+  font-size: 11px;
+  padding: 8px 7px;/*
+  margin-bottom: 6px;
+  border: 1px solid #faf0e6;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  background-color: #fffff0;*/
+}
+.calBoxInner a {
+	display: block;
+}
+.calEventName {
+  background-color: #e6e6fa;
+}
+.calDate {
+  margin: 8px 0;
+  padding: 0 4px;
+  color: #333;
+}
+.calDate span {
+  display: none;
+  font-size: 10px;
+}
+@media (max-width: 640px) {
+	.calDate span {
+	  display: inline;
+	}
+	.calDate {
+	  width: 27%;
+	  float: left;
+	}
+	.calBoxInner {
+		width: 73%;
+		float: right;
+	}
+	.calBoxInner a br {
+	  display: none;
+	}
+	.calBoxInner a span {
+	  padding-left: 1em;
+	}
+	.calBox {
+	  -webkit-box-shadow: 0 4px 7px -7px #777;
+	  -moz-box-shadow: 0 4px 7px -7px #777;
+	  box-shadow: 0 4px 7px -7px #777;
+	  min-height: 43px;
+	  text-align: left;
+	}
+	.calRow { /*
+	  -webkit-box-shadow: none;
+	  -moz-box-shadow: none;
+	  box-shadow: none; */
+    border-bottom: none;
+	  padding-bottom: 0;
+  	margin-bottom: 0;
+	}
+  .calBoxEmpty {
+    display: none;
+  }
+  .calBoxToday {
+    display: block;
+  }
+	.calBoxSat .calDate {
+		color: #4682b4;
+	}
+	.calBoxSun .calDate {
+		color: #ff6347;
+	}
+}
+.calBoxEmpty .calDate,
+.calBoxEmpty .calDate a {
+	color: #ccc;
+}
+.no-activities p {
+  color: #ccc;
+}
+.calBoxToday .calDate {
+  background-color: #ff5c16;
+  border-radius: 2px;
+  color: #fff;
+}
+.calBoxToday .calDate a {
+  color: #fff;
+}
+.calBoxToday .calDate ul > li > a {
+  color: #333;
+}
+.calBoxToday .calDate ul > li > a:hover,
+.calBoxToday .calDate ul > li > a:focus {
+  color: #fff;
+}
+.calNoActivities {
+  background-color: #e6e6fa;
+  color: #999;
+}
+.calNoActivities .calEventName {
+  background-color: #fff;
+}
+.calNoActivities a {
+  color: #789;
+}

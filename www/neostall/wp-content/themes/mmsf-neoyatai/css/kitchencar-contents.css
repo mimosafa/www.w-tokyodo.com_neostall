@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/**
+ *
+ */
+.neoyatai-content,
+.neoyatai-teaser {
+  margin-bottom: 30px;
+}
+.neoyatai-content > figure {
+  opacity: 1;
+  transition: opacity .5s;
+}
+.neoyatai-content.waiting > figure {
+  opacity: 0;
+}
+.neoyatai-content.waiting:before {
+  position: absolute;
+  left: 50%;
+  top: 37.5%;
+  margin-left: -0.55em;
+  content: '\f021';
+  font-family: FontAwesome;
+  font-size: 48px;
+  color: #ddd;
+  text-align: center;
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+/**
+ * section.neoyatai-content > figure
+ */
+@media (min-width: 768px) and (max-width: 991px) {
+  .neoyatai-content,
+  .neoyatai-teaser {
+    height: 259px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .neoyatai-content,
+  .neoyatai-teaser {
+    height: 220px;
+  }
+}
+@media (min-width: 1200px) {
+  .neoyatai-content,
+  .neoyatai-teaser {
+    height: 270px;
+  }
+}
+.neoyatai-content > figure {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+/**
+ * section.neoyatai-content > figure > img // Kitchencar image
+ */
+.neoyatai-content > figure > img {
+  display: block;
+}
+.neoyatai-content > figure > .fit {
+  width: 100%;
+  height: 100%;
+}
+.neoyatai-content > figure > .vertically {
+  width: 100%;
+  height: auto;
+}
+.neoyatai-content > figure > .horizontally {
+  width: auto;
+  height: 100%;
+}
+/**
+ * section.neoyatai-content > figure > figcaption
+ */
+.neoyatai-content > figure > figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0);
+  padding: 10px;
+  transition: .3s;
+}
+.neoyatai-content.focus > figure > figcaption {
+  background-color: rgba(0,0,0,.7);
+}
+.muted > figure > figcaption,
+.muted.focus > figure > figcaption {
+  background-color: rgba(0,0,0,.8);
+}
+/**
+ * figcaption contents
+ */
+.neoyatai-content > figure > figcaption > div {
+  opacity: 0;
+  transition: opacity .3s;
+}
+.neoyatai-content.focus > figure > figcaption > div {
+  opacity: 1;
+}
+/**
+ *
+ */
+.neoyatai-content > figure > figcaption > h4 {
+  margin: 0;
+  font-weight: 700;
+  color: #fff;
+  text-align: right;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.8),
+               0 1px 2px rgba(0, 0, 0, 0.7),
+               0 1px 4px rgba(0, 0, 0, 0.6),
+               0 1px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.neoyatai-content > figure > figcaption > h4 > small {
+  color: #fff;
+}
+.muted > figure > figcaption > h4 {
+  font-weight: 400;
+  color: #eee;
+  text-shadow: 0 0 0;
+}
+.muted > figure > figcaption > h4 > del {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.neoyatai-content .food-thumb {
+  width: 150px;
+  height: 150px;
+  display: block;
+  float: right;
+  margin: 0 0 7px 7px;
+}
+.neoyatai-content .food-thumb > img {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .neoyatai-content .food-thumb {
+    width: 100px;
+    height: 100px;
+  }
+}
+.neoyatai-content .content-items {
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.65;
+}
+.neoyatai-content .content-items > span {
+  margin-right: 4px;
+}
+.neoyatai-content .content-text {
+  color: #fff;
+  font-size: 11px;
+  line-height: 1.65;
+}
+

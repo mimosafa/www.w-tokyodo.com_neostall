@@ -1,0 +1,30 @@
+@charset "utf-8";
+/*
+Theme Name: NEOYATAI THEME
+Template: neoyatai-core
+Theme URI: http://www.w-tokyodo.com/neostall/
+Description: ネオ屋台村表示テーマ
+Author: mimosafa.
+Version: 1.0
+*/
+
+/* Sticky footer styles
+ .navbar height = 85px, #footer height = 60px
+-------------------------------------------------- http://getbootstrap.com/2.3.2/examples/sticky-footer-navbar.html */
+html,
+body {
+  height: 100%;
+}
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;
+}
+#push,
+#footer {
+  height: 60px;
+}
+#contents {
+  padding-top: 85px;
+}

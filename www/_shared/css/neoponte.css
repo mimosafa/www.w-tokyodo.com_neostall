@@ -1,0 +1,421 @@
+/* CSS Document */
+
+
+/* ================================================
+main
+================================================ */
+#header #siteid {
+	float: left;
+	margin-top: 20px;
+}
+
+.topics p {
+	color: #666;
+}
+#header {
+	background: url(/_shared/images/neo_ponte/bg_neo_ponte_top.png) left top repeat-x;
+}
+#naviSub li {
+	background: url(/_shared/images/neo_ponte/ico_list_mark.png) no-repeat left center;
+}
+
+/* ================================================
+news
+================================================ */
+.news {
+	background: url(../images/neo_ponte/ttl_info.png) no-repeat left top;
+}
+#news {
+	clear: both;
+	border-left: 5px solid #14a83b;
+}
+#news h2 {
+	margin: 0 0 5px 10px;
+}
+#news dl {
+	line-height: 130%;
+	color: #666;
+}
+#news dt {
+	font-size: 85%;
+	padding: 5px 0px 0px 10px;
+}
+
+#news dd {
+	font-size: 95%;
+	background: url(/_shared/images/neo_yatai/lin_dot.png) left bottom no-repeat;
+	padding: 0px 0px 5px 10px;
+}
+.toNews {
+	background: url(/_shared/images/neo_ponte/ico_list_mark.png) no-repeat left center;
+
+}
+
+#nav-below {
+	margin: 15px 0px 0px;
+	padding: 0px;
+	width: 680px;
+}
+#nav-below p {
+	font-size: 90%;
+}
+.nav-previous {
+	float: left;
+}
+.nav-previous a {
+	background: url(/_shared/images/neo_ponte/ico_list_mark02.png) no-repeat left center;
+	padding-left: 13px;
+}
+.nav-next {
+	float: right;
+}
+.nav-next a {
+	background: url(/_shared/images/neo_ponte/ico_list_mark.png) no-repeat right center;
+	padding-right: 12px;
+}
+#newsBox {
+	margin: 15px 40px 15px 20px;
+}
+#newsBox p {
+	font-size: 90%;
+	line-height: 140%;
+	color: #666;
+	margin-bottom: 10px;
+}
+#newsBox ul,
+#newsBox ol{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 90%;
+	line-height: 120%;
+	color: #666;
+}
+#newsBox ul li {
+	margin-left: 20px;
+	list-style: disc outside;
+	margin-bottom: 5px;
+}
+#newsBox ol li {
+	margin-left: 20px;
+	list-style: decimal outside;
+	margin-bottom: 5px;
+}
+#newsBox table {
+	font-size: 90%;
+	color: #666;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-top: 1px solid #999;
+	border-right: 1px solid #999;
+	line-height: 130%;
+}
+#newsBox table th {
+	background: #EAEAEA;
+}
+#newsBox table th,
+#newsBox table td{
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999;
+	padding: 5px;
+}
+
+/* ================================================
+Second page
+================================================ */
+#ttl {
+	margin: 0px 0px 15px;
+	width: 680px;
+	min-height: 49px;
+}
+*html #ttl {
+	height: 49px;
+}
+#ttl h1 {
+	font-weight: bold;
+	color: #333;
+	padding-left: 60px;
+	padding-top: 15px;
+	font-size: 135%;
+	padding-right: 10px;
+}
+.visual {
+	margin-bottom: 15px;
+}
+
+.linkMark,
+.linkList{
+	background: url(/_shared/images/neo_ponte/ico_list_mark.png) no-repeat left center;
+}
+
+.listPlace {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.listPlace li {
+	background: url(/_shared/images/lin_dot.png) no-repeat left bottom;
+	padding: 5px 0px;
+	font-size: 90%;
+}
+.listPlace li a {
+	background: url(/_shared/images/neo_ponte/ico_list_mark.png) no-repeat left center;
+	padding-left: 12px;
+}
+
+/* ================================================
+about
+================================================ */
+.about {
+	background: url(/_shared/images/neo_ponte/ttl_about.png) no-repeat left top;
+}
+
+
+#about {
+
+}
+#about h2 {
+	font-weight: bold;
+	color: #FFF;
+	background: #14A83B;
+	padding: 5px 10px;
+	margin-bottom: 15px;
+	clear: both;
+}
+#about p {
+	font-size: 90%;
+	line-height: 160%;
+	color: #666;
+	margin: 0px 0px 30px;
+	display: block;
+}
+#about .photo01 {
+	margin: 0px 20px 30px 0px;
+	padding: 0px;
+	float: left;
+	width: 280px;
+}
+#about .photo02 {
+	margin: 0px 0px 30px 20px;
+	float: right;
+	width: 350px;
+}
+#about .caption {
+	font-size: 80%;
+	line-height: 130%;
+	margin: 5px 0px 0px;
+	text-align: left;
+	padding: 0px;
+	vertical-align: top;
+}
+
+/* ================================================
+menu
+================================================ */
+.menu {
+	background: url(/_shared/images/neo_ponte/ttl_menu.png) no-repeat left top;
+}
+#ponte h2 {
+	font-weight: bold;
+	color: #14A83B;
+	padding: 0px;
+	clear: both;
+	margin: 0px 0px 10px;
+	font-size: 110%;
+}
+#ponte h3 {
+	font-weight: bold;
+	color: #FFF;
+	background: #14A83B;
+	padding: 5px 10px;
+	margin-bottom: 15px;
+	clear: both;
+}
+#ponte h3.owh3 {
+	font-weight: bold;
+	color: #14A83B;
+	padding: 0px;
+	clear: both;
+	font-size: 90%;
+	background: #FFF;
+	margin: 0px 0px 10px;
+}
+#ponte h2.owh2 {
+	font-weight: bold;
+	color: #FFF;
+	background: #14A83B;
+	padding: 5px 10px;
+	margin: 15px 0px 10px;
+	clear: both;
+}
+#ponte .txt {
+	font-size: 90%;
+	line-height: 140%;
+	color: #666;
+	margin-bottom: 15px;
+}
+#ponte .txtLink {
+	font-size: 90%;
+	margin-bottom: 20px;
+}
+
+.boothInfo {
+	margin: 0px 0px 30px;
+	width: 680px;
+	border-top: 2px solid #eee;
+	border-bottom: 3px solid #eee;
+	clear: both;
+}
+.boothInfo dl {
+	font-size: 90%;
+}
+
+.boothInfo dl dt {
+	margin: 0px;
+	padding: 10px 5px;
+	float: left;
+	width: 155px;
+	font-weight: bold;
+	color: #149A2F;
+	display: block;
+	border-top: 1px solid #eee;
+	clear: both;
+}
+.boothInfo dl dd {
+	float: right;
+	width: 500px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	background: url(/_shared/images/vLine_dot.png) repeat-y left top;
+	border-top: 1px solid #eee;
+	display: block;
+	color: #666;
+}
+.boothInfo dl dd dt,
+.boothInfo dl dd dd{
+	background: url(none);
+}
+.boothInfo h4 {
+	clear: both;
+}
+
+#ponte .booth {
+	clear: both;
+	margin-bottom: 20px;
+}
+.shopMenu dt {
+	display: inline;
+}
+#ponte .booth .boothInfo dd .shopMenu {
+	margin-bottom: 10px;
+	font-size: 100%;
+}
+.booth .boothInfo .shopMenu dt {
+	margin: 0px 0px 5px;
+	padding: 0px;
+	float: none;
+	border-style: none;
+	color: #0C3;
+	width: 480px;
+}
+#ponte .boothInfo .shopMenu dd {
+	margin: 0px 0px 0px 10px;
+	padding: 0px;
+	float: none;
+	border-style: none;
+	line-height: 140%;
+	width: 480px;
+}
+.photoL {
+	display: inline;
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+.txtR {
+	font-size: 90%;
+	line-height: 140%;
+	color: #666;
+}
+
+
+/* ================================================
+owner
+================================================ */
+.staff {
+	background: url(/_shared/images/neo_ponte/ttl_staff.png) no-repeat left top;
+}
+
+
+/* ================================================
+owner
+================================================ */
+.owner {
+	background: url(/_shared/images/neo_ponte/ttl_owner.png) no-repeat left top;
+}
+.basicList {
+	font-size: 90%;
+	line-height: 160%;
+	color: #666;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+.basicList li {
+	list-style: disc outside;
+}
+#qa {
+	font-size: 90%;
+	margin-bottom: 20px;
+	float: right;
+	width: 390px;
+}
+#qa dt {
+	background: url(/_shared/images/neo_ponte/iconQ.png) no-repeat left center;
+	padding-left: 25px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: #333;
+}
+#qa dd {
+	background: url(/_shared/images/neo_ponte/iconA.png) no-repeat left center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 25px;
+	margin-bottom: 10px;
+	color: #666;
+}
+
+/* ================================================
+media
+================================================ */
+.media {
+	background: url(/_shared/images/neo_ponte/ttl_media.png) no-repeat left top;
+}
+#media {
+	width: 680px;
+}
+#media li {
+	float: left;
+	width: 120px;
+	margin-right: 15px;
+	margin-bottom: 20px;
+}
+#media li p {
+	font-size: 90%;
+	line-height: 120%;
+	color: #666;
+	margin-top: 5px;
+}
+
+/* ================================================
+contact 
+================================================ */
+.contact {
+	background: url(/_shared/images/neo_ponte/ttl_contact.png) no-repeat left top;
+}
+
+/* ================================================
+pastmenu
+================================================ */
+.pastmenu {
+	background: url(/_shared/images/neo_ponte/ttl_pastmenu.png) no-repeat left top;
+}

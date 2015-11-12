@@ -1,0 +1,146 @@
+@charset "utf-8";
+/*
+Theme Name: ネオ屋台村 OLD SCHOOL FINAL
+
+Theme URI: http://www.w-tokyodo.com/neostall/
+Description: ネオ屋台村専用テーマ
+Author: mimosafa.
+Version: 99.0
+*/
+
+/* ================================================
+areaSiteHeader
+================================================ */
+#areaSiteHeader {
+  background: url(./img/bg_head_top.png) left top repeat-x;
+  height: 30px;
+}
+#areaSiteHeader a {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: 100%;
+}
+#wstdLogo {
+  margin-top: 3px;
+  margin-left: 10px;
+  float: left;
+}
+#wstdLogo a {
+  background: url(./img/ttl_wtd.png) left top no-repeat;
+  height: 22px;
+  width: 232px;
+}
+#areaSiteHeader ul {
+  float: right;
+  margin: 7px 0 9px;
+}
+#areaSiteHeader li {
+  float: left;
+  padding-left: 14px;
+}
+#wstdCompany {
+  background: url(./img/btn_about_company.png) left top no-repeat;
+  width: 68px;
+  height: 14px;
+}
+#wstdContact {
+  background: url(./img/btn_contact.png) left top no-repeat;
+  width: 100px;
+  height: 14px;
+}
+
+/* ================================================
+header-legacy
+================================================ */
+#header-legacy {
+  background: url(./img/bg_neo_yatai_top.png) left top repeat-x;
+}
+#header-legacy #siteid {
+  float: left;
+  padding: 16px 0;
+}
+#neoyataiLogo {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: 100%;
+  background: url(./img/ttl_neo_yatai.png) left top no-repeat;
+  margin: 0 0 0 10px;
+  font-size: 1em;
+  width: 241px;
+  height: 37px;
+}
+#header-legacy ul {
+  float: right;
+  margin-bottom: 0;
+}
+#header-legacy ul li {
+  float: left;
+  width: 120px;
+  height: 69px;
+  list-style: none;
+}
+#header-legacy ul li a,
+#header-legacy ul li span {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: 100%;
+  width: 100%;
+  height: 100%;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+#header-legacy ul li a:hover {
+  filter: alpha(opacity=50);
+  -moz-opacity: .50;
+  opacity: .50;
+}
+#btn-direct {
+  background-image: url(./img/btn_direct.png);
+}
+#btn-neoyatai {
+  background-image: url(./img/btn_neo_yatai_on.png);
+}
+#btn-neoponte {
+  background-image: url(./img/btn_neo_ponte.png);
+}
+#btn-sharyobu {
+  background-image: url(./img/btn_shoryo.png);
+}
+
+/* ==================
+Neoyatai Navbar
+================== */
+#neoyatai-navbar {
+  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+@media (min-width: 992px) {
+  #neoyatai-global-nav {
+    margin-left: -15px;
+  }
+}
+
+/* ======================
+Neostall Header Image
+====================== */
+#neostall-header-image {
+  background-size: cover;
+  background-position: center;
+}
+
+/* ====================
+Neoyatai Breadcrumb
+==================== */
+#neoyatai-breadcrumb > .breadcrumb {
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3", arial,helvetica, clean, sans-serif;
+  font-size: 11px;
+  background-color: transparent;
+}
+
+/* =========================
+
+========================= */

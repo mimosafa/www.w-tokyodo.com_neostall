@@ -1,0 +1,507 @@
+/* CSS Document */
+
+
+/* ================================================
+main
+================================================ */
+body {
+	background: #000;
+}
+#header #siteid {
+	float: left;
+	margin-top: 10px;
+}
+#wrap {
+	width: 980px;
+	margin: 0 auto;
+	background: url(/_shared/images/sharyobu/bg_navi.png) repeat-y left top;
+}
+
+#sharyobu .txt {
+	color: #E8E8E8;
+	font-size: 90%;
+	line-height: 140%;
+	margin-bottom: 15px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+#sharyobu h2 {
+	color: #FFF;
+	background: #B2181C;
+	font-weight: bold;
+	padding: 3px 10px;
+	margin-bottom: 15px;
+}
+a {
+	color: #FFF;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+#naviSub li {
+	background: url(/_shared/images/sharyobu/ico_list_mark.png) no-repeat left center;
+}
+#naviSub li a {
+	color: #FFF;
+}
+
+
+
+.topics p {
+	color: #FFF;
+}
+
+#header {
+	background: url(/_shared/images/sharyobu/bg_sharyobu_top.png) repeat-x left top;
+}
+#foot a {
+	color: #666;
+}
+#foot .pagetop {
+	font-size: 85%;
+	background: #666;
+	color: #FFF;
+	text-align: center;
+	padding: 4px 2px 2px;
+	margin-left: 870px;
+	width: 100px;
+	clear: both;
+	height: 15px;
+	position: absolute;
+	top: -24px;
+}
+#foot .pagetop a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.breadcrumb a,
+.breadcrumb p {
+	color: #FFF;
+}
+
+
+/* ================================================
+column
+================================================ */
+
+.column h2 {
+	color: #FFF;
+}
+.column p {
+	color: #FFF;
+}
+
+.column .label {
+	color: #FFF;
+}
+
+
+/* ================================================
+news
+================================================ */
+.news {
+	background: url(/_shared/images/sharyobu/ttl_info.png) no-repeat left top;
+}
+#news {
+	clear: both;
+	border-left: 5px solid #bf1f25;
+}
+#news h2 {
+	margin: 0 0 5px 10px;
+}
+#news dl {
+	line-height: 130%;
+	color: #FFF;
+}
+#news dt {
+	font-size: 85%;
+	padding: 5px 0px 0px 10px;
+}
+
+#news dd {
+	font-size: 95%;
+	background: url(/_shared/images/sharyobu/lin_dot.png) repeat-x left bottom;
+	padding: 0px 0px 5px 10px;
+}
+#news a,
+.toNews a{
+	color: #FFF;
+	text-decoration: underline;
+}
+#news a:hover,
+.toNews a:hover{
+	text-decoration: none;
+}
+.toNews {
+	background: url(/_shared/images/sharyobu/ico_list_mark.png) no-repeat left center;
+
+}
+
+#nav-below {
+	margin: 15px 0px 0px;
+	padding: 0px;
+	width: 680px;
+}
+#nav-below p {
+	font-size: 90%;
+}
+.nav-previous {
+	float: left;
+	font-size: 90%;
+}
+.nav-previous a {
+	background: url(/_shared/images/sharyobu/ico_list_mark02.png) no-repeat left center;
+	padding-left: 13px;
+}
+.nav-next {
+	float: right;
+	font-size: 90%;
+}
+.nav-next a {
+	background: url(/_shared/images/sharyobu/ico_list_mark.png) no-repeat right center;
+	padding-right: 12px;
+}
+#newsBox {
+	margin: 15px 20px 15px 20px;
+}
+#newsBox p {
+	font-size: 90%;
+	line-height: 140%;
+	color: #FFF;
+	margin-bottom: 10px;
+}
+#newsBox ul,
+#newsBox ol{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 90%;
+	line-height: 120%;
+	color: #FFF;
+}
+#newsBox ul li {
+	margin-left: 20px;
+	list-style: disc outside;
+	margin-bottom: 5px;
+}
+#newsBox ol li {
+	margin-left: 20px;
+	list-style: decimal outside;
+	margin-bottom: 5px;
+}
+#newsBox table {
+	font-size: 90%;
+	color: #FFF;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-top: 1px solid #999;
+	border-right: 1px solid #999;
+	line-height: 130%;
+}
+#newsBox table th {
+	background: #EAEAEA;
+}
+#newsBox table th,
+#newsBox table td{
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999;
+	padding: 5px;
+}
+
+
+/* ================================================
+Second page
+================================================ */
+#ttl {
+	margin: 0px 0px 15px;
+	width: 680px;
+	min-height: 49px;
+}
+*html #ttl {
+	height: 49px;
+}
+#ttl h1 {
+	font-weight: bold;
+	color: #FFF;
+	padding-left: 60px;
+	padding-top: 15px;
+	font-size: 135%;
+	padding-right: 10px;
+}
+.visual {
+	margin-bottom: 15px;
+}
+
+.linkMark {
+	background: url(/_shared/images/sharyobu/ico_list_mark.png) no-repeat left center;
+}
+
+.edit-link a {
+	background: #666;
+	padding: 3px 7px;
+	color: #FFF;
+	text-decoration: none;
+	border: 1px solid #333;
+}
+.edit-link a:hover {
+	background: #999;
+	color: #FFF;
+}
+.topics {
+	background: #333 url(none);
+	padding-top: 10px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.topics .topicsInner {
+	background: none;
+	padding: 0 17px 0px;
+}
+.topics p.label {
+	position: absolute;
+	left: 680px;
+	top: 0px;
+}
+
+/* ================================================
+about
+================================================ */
+.about {
+	background: url(/_shared/images/sharyobu/ttl_about.png) no-repeat left top;
+}
+
+.photoL {
+	display: inline;
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+.make_car {
+	margin: 0px 0px 30px;
+}
+.make_car h2 {
+	color: #FFF;
+	font-size: 110%;
+	font-weight: bold;
+	margin: 0px 0px 10px;
+	clear: both;
+}
+.make_car .car {
+	margin: 0px 0px 20px;
+	width: 680px;
+	clear: both;
+}
+.make_car .car img {
+	margin: 0px;
+	float: left;
+	width: 120px;
+}
+.make_car .car .txt_car {
+	margin: 0px;
+	float: right;
+	width: 550px;
+}
+.make_car .car .txt_car h3 {
+	color: #FFF;
+	background: #B91A14;
+	padding: 3px 10px;
+	font-weight: bold;
+	margin: 0px 0px 5px;
+}
+.make_car .car .txt_car p {
+	font-size: 85%;
+	line-height: 140%;
+	color: #FFF;
+}
+
+
+#sharyobu .works {
+	width: 340px;
+	float: left;
+}
+.works li {
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 15px;
+	display: block;
+	clear: both;
+}
+.works li img {
+	float: left;
+	width: 84px;
+	margin-right: 20px;
+}
+
+.works li dl {
+	font-size: 85%;
+	line-height: 100%;
+	margin: 3px 0px 0px;
+	float: right;
+	width: 210px;
+}
+.works li dl dt {
+	color: #CCC;
+	float: left;
+	width: 60px;
+	margin-right: 10px;
+	clear: both;
+}
+.works li dl dd {
+	color: #FFF;
+}
+.works li p {
+	font-size: 85%;
+	color: #FFF;
+}
+
+/* ================================================
+facture
+================================================ */
+.facture {
+	background: url(/_shared/images/sharyobu/ttl_facture.png) no-repeat left top;
+}
+.dlset {
+	margin: 0px 0px 30px;
+	width: 675px;
+	border-top: 2px solid #ccc;
+	border-bottom: 3px solid #ccc;
+	clear: both;
+}
+.dlset dl dt {
+	margin: 0px;
+	padding: 10px 5px;
+	float: left;
+	width: 155px;
+	font-weight: bold;
+	color: #fff;
+	display: block;
+	border-top: 1px solid #ccc;
+	clear: both;
+}
+.dlset dl dd {
+	float: right;
+	width: 500px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	background: url(/_shared/images/vLine_dot.png) repeat-y left top;
+	border-top: 1px solid #ccc;
+	display: block;
+	font-size: 90%;
+	color: #fff;
+}
+.list,
+.listPlace{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.list li,
+.listPlace li{
+	background: url(/_shared/images/sharyobu/lin_dot.png) repeat-x left bottom;
+	padding: 10px;
+	font-size: 90%;
+}
+.list li li,
+.listPlace li li{
+	background: url(none);
+	padding: 10px 0px 0px;
+	margin-right: 20px;
+	margin-left: 20px;
+	font-size: 100%;
+}
+.list li a,
+.listPlace li a{
+	background: url(/_shared/images/sharyobu/ico_list_mark.png) no-repeat left center;
+	padding-left: 12px;
+}
+
+/* ================================================
+sell
+================================================ */
+.sell {
+	background: url(/_shared/images/sharyobu/ttl_sell.png) no-repeat left top;
+}
+
+/* ================================================
+clearfix 
+================================================ */
+
+.works li:after{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+.works li{
+    display:inline-block;
+    min-height:1%;  /* for IE 7*/
+}
+.thum {
+	margin: 0px 0px 15px;
+	width: 680px;
+}
+.thum dl {
+	margin-bottom: 10px;
+}
+.thum dl dt {
+	color: #F99;
+	font-size: 90%;
+	font-weight: bold;
+	margin-bottom: 5px;
+	clear: both;
+}
+.thum dl dd {
+	float: left;
+	width: 120px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+#sharyobu h3 {
+	font-size: 100%;
+	font-weight: bold;
+	color: #B2181C;
+	margin: 0px 0px 5px;
+}
+#sharyobu h4 {
+	color: #FFF;
+	font-size: 90%;
+	background: #4F0002;
+	padding: 3px 10px;
+	margin-bottom: 10px;
+}
+.carinfo {
+	color: #FFF;
+	font-size: 90%;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #999;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+}
+.carinfo th {
+	background: #8C0003;
+	padding: 3px 10px;
+	border: 1px solid #C66;
+}
+.carinfo td {
+	padding: 3px 10px;
+	border-right: 1px solid #999;
+	border-left: 1px solid #999;
+}
+
+* html .works li{height: 1%;}
+.clearfix{display: block;}
+
+/* ================================================
+contact 
+================================================ */
+.contact {
+	background: url(/_shared/images/sharyobu/ttl_contact.png) no-repeat left top;
+}
+#main .wpcf7-form dl dt {
+	color: #FFF;
+}

@@ -1,0 +1,377 @@
+/* CSS Document */
+
+/* ================================================
+areaSiteHeader
+================================================ */
+#areaSiteHeader {
+	background: url(../images/bg_head_top.png) left top repeat-x;
+	padding-right: 10px;
+	padding-left: 10px;
+	height: 33px;
+}
+
+#areaSiteHeader p {
+	float: left;
+	margin-top: 6px;
+}
+
+#areaSiteHeader ul {
+	float: right;
+	margin-right: 20px;
+	margin-top: 11px;
+}
+
+#areaSiteHeader li {
+	display: inline;
+	padding-left: 14px;
+}
+
+#areaSiteHeaderInner {
+	width: 980px;
+	margin: 0 auto;
+}
+
+/* ================================================
+wrap
+================================================ */
+#wrap {
+	width: 980px;
+	margin: 0 auto;
+	background: url(../images/neo_yatai/bg_navi.png) left top repeat-y;
+	padding-bottom: 30px;
+}
+
+
+/* ================================================
+header
+================================================ */
+#header {
+	clear: both;
+	margin-bottom: 20px;
+}
+
+
+
+#header ul {
+	float: right;
+	margin-right: 20px;
+	display: inline;
+}
+
+#header li {
+	display: inline;
+}
+#header li a:hover img {
+	filter: alpha(opacity=50);
+	-moz-opacity:0.50;
+	opacity:0.50;
+}
+
+#headerInner {
+	width: 980px;
+	margin: 0 auto;
+}
+
+
+/* ================================================
+navi
+================================================ */
+
+#navi {
+	float: left;
+	width: 256px;
+	padding-bottom: 20px;
+}
+
+#navi li img {
+	vertical-align: top;
+}
+
+#navi li a:hover img {
+	filter: alpha(opacity=50);
+	-moz-opacity:0.50;
+	opacity:0.50;
+}
+
+#naviSub {
+	margin: 20px 10px 10px;
+}
+
+#naviSub a {
+	color: #000;
+}
+
+#naviSub li {
+	padding-left: 12px;
+	margin-bottom: 1em;
+	font-size: 95%;
+}
+
+/* ================================================
+main
+================================================ */
+#main {
+	width: 685px;
+	float: right;
+	margin-right: 20px;
+	min-height: 600px;
+}
+*html #main {
+	-height: 400px;
+	display: inline;
+}
+.breadcrumb {
+	margin: 0px auto 5px;
+	width: 940px;
+}
+.breadcrumb p {
+	font-size: 85%;
+	color: #666;
+	text-align: right;
+}
+.breadcrumb a {
+	color: #333;
+}
+.edit-link {
+	text-align: right;
+	margin: 10px 10px 10px 0px;
+	font-size: 90%;
+}
+.edit-link a {
+	background: #999;
+	padding: 3px 7px;
+	color: #FFF;
+	text-decoration: none;
+	border: 1px solid #CCC;
+}
+.edit-link a:hover {
+	background: #B9B9B9;
+	color: #FFF;
+}
+.linkMark,
+.linkList{
+	font-size: 90%;
+	padding: 0px 0px 0px 10px;
+	margin-top: 5px;
+}
+.toNews {
+	font-size: 90%;
+	padding: 0px 0px 0px 10px;
+	margin-top: 10px;
+}
+.pagetop {
+	font-size: 85%;
+	background: #eeeeee;
+	color: #666;
+	text-align: center;
+	padding: 4px 2px 2px;
+	margin-left: 880px;
+	width: 100px;
+	clear: both;
+	height: 15px;
+	position: absolute;
+	top: -21px;
+}
+.pagetop a {
+	text-decoration: none;
+}
+
+/* ================================================
+column
+================================================ */
+
+.column {
+	width: 220px;
+	float: left;
+	border-left: 1px solid #cbcbcb;
+	margin-bottom: 30px;
+	margin-left: 5px;
+}
+
+.column h2 {
+	font-weight: bold;
+	margin-bottom: 7px;
+	font-size: 90%;
+	line-height: 140%;
+	color: #333;
+}
+.column p {
+	line-height: 130%;
+	color: #666;
+	font-size: 85%;
+}
+
+.column .label {
+	font-size: 95%;
+	color: #FFF;
+}
+
+
+.label .orange {
+	background-color: #ee7f00;
+	padding: 2px 8px;
+}
+
+.label .red {
+	background-color: #fb3d02;
+	padding: 2px 8px;
+}
+
+.label .blue {
+	background-color: #0068B7;
+	padding: 2px 8px;
+}
+
+.columnInner {
+	padding: 10px;
+}
+.topics {
+	background: url(/_shared/images/neo_yatai/bg_topics.png) left top no-repeat;
+	padding-top: 15px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.topicsInner {
+	background: url(/_shared/images/neo_yatai/bg_topics.png) left bottom no-repeat;
+	padding: 0 17px 5px;
+}
+.topics p {
+	line-height: 140%;
+	margin-bottom: 10px;
+}
+.topics img {
+	margin-bottom: 10px;
+}
+.topics p.label {
+	position: absolute;
+	left: 680px;
+	top: 10px;
+}
+/* ================================================
+contact
+================================================ */
+.wpcf7-form dl {
+
+	line-height: 140%;
+	color: #666;
+	margin: 15px;
+}
+.wpcf7-form dt {
+	margin: 0px;
+}
+.wpcf7-form dd {
+	margin: 0px 0px 10px;
+}
+.wpcf7-form dd input,
+.wpcf7-form dd textarea {
+	width: 400px;
+}
+.wpcf7-form dd .wpcf7-radio input {
+	width: 10px;
+	margin: 5px 0px 0px;
+	padding: 0px;
+}
+.wpcf7-form p {
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+.wpcf7-mail-sent-ok {
+	font-size: 90%;
+	color: #666;
+	background: #FFB;
+	padding: 5px;
+}
+.require {
+	font-size: 90%;
+	color: #FFF;
+	background: #C00;
+	padding: 2px 2px 1px;
+	margin-left: 10px;
+	margin-bottom: 3px;
+}
+
+
+/* ================================================
+foot
+================================================ */
+
+#foot {
+	border-top: 3px solid #eeeeee;
+	text-align: center;
+	color: #b2b2b2;
+	clear: both;
+	background: #FFF;
+	margin: 0px;
+	padding: 0px 0px 10px;
+}
+
+#footInner {
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+}
+#foot ul {
+	font-size: 85%;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	padding-top: 10px;
+}
+#foot li {
+	display: inline;
+	margin-right: 10px;
+	margin-left: 10px;
+	background: url(/_shared/images/icon_mini.png) no-repeat left center;
+	padding-left: 7px;
+}
+
+/* ================================================
+module
+================================================ */
+
+.line_btm_dot {
+	background: url(/_shared/images/lin_dot.png) repeat-x;
+}
+
+a {
+	color: #333;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+.right {
+	text-align: right;
+}
+.mgnB20 {
+	margin-bottom: 20px;
+}
+.mgnB30 {
+	margin-bottom: 20px;
+}
+
+/* ================================================
+clearfix 
+================================================ */
+
+.clearfix:after{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+.clearfix{
+    display:inline-block;
+    min-height:1%;  /* for IE 7*/
+}
+
+* html .clearfix{height: 1%;}
+.clearfix{display: block;}
+
+.clear {
+	clear: both;
+}

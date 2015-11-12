@@ -1,0 +1,120 @@
+@charset "utf-8";
+/*
+Theme Name: NEOSYSTEM ADMINISTRATOR
+Template: neoyatai-core
+Theme URI: http://www.w-tokyodo.com/neostall/
+Description: ネオシステム管理者用テーマ
+Author: mimosafa.
+Version: 1.0
+*/
+
+@media (min-width: 980px) {
+  body {
+    padding-top: 65px;
+    padding-bottom: 40px;
+  }
+}
+
+span.modify {
+  border-bottom: 1px dotted;
+  cursor: pointer;
+  user-select: none; /* CSS3 */
+  -moz-user-select: none; /* Firefox */
+  -webkit-user-select: none; /* Safari、Chromeなど */
+  -ms-user-select: none; /* IE10かららしい */
+}
+a.edit:hover,
+a.done:hover,
+a.cncl:hover {
+  text-decoration: none;
+}
+a.edit i {
+  display: none;
+}
+tr:hover a.edit i {
+  display: inline;
+}
+
+.sortableItem .changeOrder {
+  cursor: move;
+}
+
+#numKitchencars,
+#numMenuItems {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 13px;
+  padding-left: 6px;
+  padding-right: 6px;
+  background-color: #08c;
+}
+li.active #numKitchencars,
+li.active #numMenuItems {
+  background-color: #999;
+}
+
+.thumbContainer > label,
+.thumbContainer > label > img {
+  display: block;
+  box-sizing: border-box;
+}
+.thumbContainer > label > input[type="radio"] {
+  display: none;
+}
+.thumbContainer > label {
+  width: 33%;
+  margin-bottom: 0;
+  float: left;
+}
+.thumbContainer > label > img {
+  padding: 4px;
+  opacity: .5;
+}
+.thumbContainer > label > input[type="radio"]:checked + img {
+  padding: 0;
+  opacity: 1;
+}
+
+.mmsf-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: .65;
+  z-index: 1039;
+}
+.mmsf-focused-element {
+  position: relative;
+  z-index: 1040;
+  background-color: #fff;
+}
+
+.mmsf-dropzone {
+  padding: 75px 50px;
+  background-color: #f8f8ff;
+  border: 1px dashed #666;
+  text-align: center;
+}
+
+/* ==========================
+Bootstrap Table
+========================== */
+.table-hover tbody tr:hover > th[rowspan] {
+  background-color: transparent;
+}
+.table:not(.table-bordered) > tbody:first-child > tr:first-child > th,
+.table:not(.table-bordered) > tbody:first-child > tr:first-child > td {
+  border-top: none;
+}
+.table tbody:first-child > tr th:first-child {
+  width: 20%;
+  white-space: nowrap;
+}
+.table select,
+.table textarea,
+.table input,
+.table .input-append,
+.table .input-prepend {
+  margin-bottom: 0;
+}

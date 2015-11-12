@@ -1,0 +1,262 @@
+/* CSS Document */
+
+
+/* ================================================
+main
+================================================ */
+#header #siteid {
+	float: left;
+	margin-top: 20px;
+}
+.topics p {
+	color: #666;
+}
+#header {
+	background: url(/_shared/images/direct/bg_neo_ponte_top.png) left top repeat-x;
+}
+#naviSub li {
+	background: url(/_shared/images/direct/ico_list_mark01.png) no-repeat left center;
+}
+
+
+/* ================================================
+news
+================================================ */
+.news {
+	background: url(/_shared/images/direct/ttl_info.png) no-repeat left top;
+}
+#news {
+	clear: both;
+	border-left: 5px solid #0068b7;
+}
+#news h2 {
+	margin: 0 0 10px 10px;
+}
+#news dl {
+	font-size: 95%;
+	line-height: 130%;
+	color: #666;
+	margin-bottom: 10px;
+	padding-left: 35px;
+	margin-left: 10px;
+}
+#news dt {
+
+}
+
+#news dd {
+	background: url(/_shared/images/neo_yatai/lin_dot.png) left bottom no-repeat;
+	padding: 0px 0px 5px;
+}
+.toNews {
+	background: url(/_shared/images/direct/ico_list_mark.png) no-repeat left center;
+
+}
+
+#nav-below {
+	margin: 15px 0px 0px;
+	padding: 0px;
+	width: 680px;
+}
+#nav-below p {
+	font-size: 90%;
+}
+.nav-previous {
+	float: left;
+}
+.nav-previous a {
+	background: url(/_shared/images/direct/ico_list_mark02.png) no-repeat left center;
+	padding-left: 13px;
+}
+.nav-next {
+	float: right;
+}
+.nav-next a {
+	background: url(/_shared/images/direct/ico_list_mark.png) no-repeat right center;
+	padding-right: 12px;
+}
+#newsBox {
+	margin: 15px 40px 15px 20px;
+}
+#newsBox p {
+	font-size: 90%;
+	line-height: 140%;
+	color: #666;
+	margin-bottom: 10px;
+}
+#newsBox ul,
+#newsBox ol{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 90%;
+	line-height: 120%;
+	color: #666;
+}
+#newsBox ul li {
+	margin-left: 20px;
+	list-style: disc outside;
+	margin-bottom: 5px;
+}
+#newsBox ol li {
+	margin-left: 20px;
+	list-style: decimal outside;
+	margin-bottom: 5px;
+}
+#newsBox table {
+	font-size: 90%;
+	color: #666;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-top: 1px solid #999;
+	border-right: 1px solid #999;
+	line-height: 130%;
+}
+#newsBox table th {
+	background: #EAEAEA;
+}
+#newsBox table th,
+#newsBox table td{
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999;
+	padding: 5px;
+}
+
+#news dl.neoyatai {
+	background: url(/_shared/images/wstd/icon_yatai.png) no-repeat left top;
+}
+#news dl.neoponte {
+	background: url(/_shared/images/wstd/icon_ponte.png) no-repeat left top;
+}
+#news dl.sharyobu {
+	background: url(/_shared/images/wstd/icon_sharyobu.png) no-repeat left top;
+}
+#news dl.direct {
+	background: url(/_shared/images/wstd/icon_direct.png) no-repeat left top;
+}
+
+/* ================================================
+Second page
+================================================ */
+#ttl {
+	margin: 0px 0px 15px;
+	width: 680px;
+	min-height: 49px;
+}
+*html #ttl {
+	height: 49px;
+}
+#ttl h1 {
+	font-weight: bold;
+	color: #333;
+	padding-left: 60px;
+	padding-top: 15px;
+	font-size: 135%;
+	padding-right: 10px;
+}
+.visual {
+	margin-bottom: 15px;
+}
+
+.linkMark {
+	background: url(/_shared/images/direct/ico_list_mark01.png) no-repeat left center;
+}
+
+.listPlace {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.listPlace li {
+	background: url(/_shared/images/lin_dot.png) no-repeat left bottom;
+	padding: 5px 0px;
+	font-size: 90%;
+}
+.listPlace li a {
+	background: url(/_shared/images/direct/ico_list_mark.png) no-repeat left center;
+	padding-left: 12px;
+}
+
+#wstd {
+}
+#wstd h2 {
+	font-size: 90%;
+	font-weight: bold;
+	color: #FFF;
+	background: #0068B7;
+	padding: 3px 10px;
+	margin-bottom: 10px;
+}
+#wstd p {
+	font-size: 90%;
+	line-height: 140%;
+	color: #666;
+	margin: 0px 10px 10px;
+}
+#wstd p.red {
+	color: #C03;
+}
+
+
+#wstd dl {
+	font-size: 90%;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #eee;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#wstd dl dt {
+	margin: 0px;
+	padding: 10px;
+	float: left;
+	width: 130px;
+	font-weight: bold;
+	color: #008DF7;
+	display: block;
+	border-top: 1px solid #eee;
+	clear: both;
+}
+#wstd dl dd {
+	float: right;
+	width: 500px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	background: url(/_shared/images/vLine_dot.png) repeat-y left top;
+	border-top: 1px solid #eee;
+	display: block;
+	color: #666;
+}
+
+/* ================================================
+company
+================================================ */
+.company {
+	background: url(/_shared/images/wstd/ttl_company.png) no-repeat left top;
+}
+
+/* ================================================
+site
+================================================ */
+.site {
+	background: url(/_shared/images/wstd/ttl_site.png) no-repeat left top;
+}
+.boxSite {
+	clear: both;
+	padding-bottom: 20px;
+}
+#wstd .alignleft {
+	float: left;
+	width: 119px;
+	display: inline;
+	margin-right: 20px;
+}
+.txt {
+	font-size: 90%;
+}
+
+/* ================================================
+contact 
+================================================ */
+.contact {
+	background: url(/_shared/images/wstd/ttl_contact.png) no-repeat left top;
+}

@@ -1,0 +1,556 @@
+/* CSS Document */
+
+
+/* ================================================
+main
+================================================ */
+#header #siteid {
+	float: left;
+	padding-top: 20px;
+}
+.topics p {
+	color: #666;
+}
+
+
+#header {
+	background: url(/_shared/images/neo_yatai/bg_neo_yatai_top.png) left top repeat-x;
+}
+
+#naviSub li {
+	background: url(/_shared/images/neo_yatai/ico_list_mark.png) no-repeat left center;
+}
+
+/* ================================================
+news
+================================================ */
+.news {
+	background: url(/_shared/images/neo_yatai/ttl_info.png) no-repeat left top;
+}
+#news {
+	clear: both;
+	border-left: 5px solid #f39800;
+}
+#news h2 {
+	margin: 0 0 5px 10px;
+}
+#news dl {
+	line-height: 130%;
+	color: #666;
+}
+#news dt {
+	font-size: 85%;
+	padding: 5px 0px 0px 10px;
+}
+
+#news dd {
+	font-size: 95%;
+	background: url(/_shared/images/neo_yatai/lin_dot.png) left bottom no-repeat;
+	padding: 0px 0px 5px 10px;
+}
+#news a,
+.toNews a{
+	color: #666;
+	text-decoration: underline;
+}
+#news a:hover,
+.toNews a:hover{
+	text-decoration: none;
+}
+.toNews {
+	background: url(/_shared/images/neo_yatai/ico_list_mark.png) no-repeat left center;
+
+}
+
+#nav-below {
+	margin: 15px 0px 0px;
+	padding: 0px;
+	width: 680px;
+}
+#nav-below p {
+	font-size: 90%;
+}
+.nav-previous {
+	float: left;
+	font-size: 90%;
+}
+.nav-previous a {
+	background: url(/_shared/images/neo_yatai/ico_list_mark02.png) no-repeat left center;
+	padding-left: 13px;
+}
+.nav-next {
+	float: right;
+	font-size: 90%;
+}
+.nav-next a {
+	background: url(/_shared/images/neo_yatai/ico_list_mark.png) no-repeat right center;
+	padding-right: 12px;
+}
+#newsBox {
+	margin: 15px 20px 15px 20px;
+}
+#newsBox p {
+	font-size: 90%;
+	line-height: 140%;
+	color: #666;
+	margin-bottom: 10px;
+}
+#newsBox ul,
+#newsBox ol{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 90%;
+	line-height: 120%;
+	color: #666;
+}
+#newsBox ul li {
+	margin-left: 20px;
+	list-style: disc outside;
+	margin-bottom: 5px;
+}
+#newsBox ol li {
+	margin-left: 20px;
+	list-style: decimal outside;
+	margin-bottom: 5px;
+}
+#newsBox table {
+	font-size: 90%;
+	color: #666;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-top: 1px solid #999;
+	border-right: 1px solid #999;
+	line-height: 130%;
+}
+#newsBox table th {
+	background: #EAEAEA;
+}
+#newsBox table th,
+#newsBox table td{
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999;
+	padding: 5px;
+}
+
+/* ================================================
+Second page
+================================================ */
+#ttl {
+	margin: 0px 0px 10px;
+	width: 680px;
+	min-height: 49px;
+}
+*html #ttl {
+	height: 49px;
+}
+#ttl h1 {
+	font-weight: bold;
+	color: #333;
+	padding-left: 60px;
+	padding-top: 15px;
+	font-size: 135%;
+	padding-right: 10px;
+}
+.linkMark {
+	background: url(/_shared/images/neo_yatai/ico_list_mark.png) no-repeat left center;
+}
+.txt {
+	font-size: 90%;
+	line-height: 140%;
+	color: #666;
+	margin-bottom: 15px;
+}
+
+/* ================================================
+place
+================================================ */
+
+.village {
+	background: url(/_shared/images/neo_yatai/ttl_place.png) no-repeat left top;
+}
+
+.listPlace {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.listPlace li {
+	background: url(/_shared/images/lin_dot.png) no-repeat left bottom;
+	padding: 5px 0px;
+	font-size: 90%;
+}
+.listPlace li a {
+	background: url(/_shared/images/neo_yatai/ico_list_mark.png) no-repeat left center;
+	padding-left: 12px;
+}
+#placeInfo {
+	margin: 0px 0px 30px;
+	width: 675px;
+	border-top: 2px solid #eee;
+	border-bottom: 3px solid #eee;
+}
+#placeInfo dl dt {
+	margin: 0px;
+	padding: 10px 5px;
+	float: left;
+	width: 155px;
+	font-weight: bold;
+	color: #f39800;
+	display: block;
+	border-top: 1px solid #eee;
+	clear: both;
+}
+#placeInfo dl dd {
+	float: right;
+	width: 500px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	background: url(/_shared/images/vLine_dot.png) repeat-y left top;
+	border-top: 1px solid #eee;
+	display: block;
+	font-size: 90%;
+	color: #666;
+	line-height: 140%;
+}
+#weekSche {
+	clear: both;
+	width: 680px;
+}
+#weekSche .day {
+	margin: 0px 0px 10px;
+}
+#weekSche .day .ttl_day {
+	font-weight: bold;
+	color: #FFF;
+	background: #f39800;
+	padding: 3px 5px;
+	margin: 0px 0px 10px;
+	clear: both;
+}
+#weekSche .shop {
+	margin: 0px 0px 20px;
+	clear: both;
+}
+#weekSche .shop .comment {
+	background: #FFFDD1 url(/_shared/images/neo_yatai/bg_cmnt_btm.png) no-repeat left bottom;
+	width: 525px;
+	margin: 0px 0px 5px;
+	float: left;
+	padding: 0px 0px 10px;
+}
+.comment h2 {
+	font-size: 120%;
+	color: #666;
+	font-weight: bold;
+	background: url(/_shared/images/neo_yatai/bg_cmnt_top.png) no-repeat left top;
+	width: 509px;
+	padding: 8px 8px 2px;
+}
+.comment p {
+	color: #F39800;
+	font-size: 90%;
+	padding: 0px 8px;
+	line-height: 140%;
+}
+#weekSche .photo {
+	float: right;
+	width: 145px;
+	text-align: right;
+}
+#weekSche .photo img {
+	margin-left: 3px;
+}
+.shopinfo {
+	clear: both;
+	background: url(/_shared/images/lin_dot.png) repeat-x left bottom;
+}
+.shopinfo dl {
+	clear: both;
+	background: url(/_shared/images/lin_dot.png) repeat-x left top;
+	padding-top: 3px;
+}
+.shopinfo dl dt {
+	font-size: 80%;
+	font-weight: bold;
+	color: #FFF;
+	padding: 2px 3px;
+	background: #F39800;
+	width: 55px;
+	text-align: center;
+	float: left;
+	margin: 3px 15px 3px 0px;
+}
+.shopinfo dl dd {
+	font-size: 80%;
+	padding: 5px 3px 3px;/* acf導入後、体裁が狂う、ちなみにおなじスタイル指定がテーマCSSにあり
+	float: left;*/
+	margin-bottom: 3px;
+	color: #666;
+}
+.caption {
+	font-size: 80%;
+	color: #666;
+	text-align: right;
+	clear: both;
+}
+.linkList {
+	background: url(/_shared/images/neo_yatai/ico_list_mark.png) no-repeat left center;
+	font-size: 90%;
+	padding: 0px 0px 0px 10px;
+	margin-top: 5px;
+}
+
+
+/* ================================================
+event
+================================================ */
+
+.event {
+	background: url(/_shared/images/neo_yatai/ttl_event.png) no-repeat left top;
+}
+.eventInfo .month {
+	font-weight: bold;
+	color: #FFF;
+	background: #f39800;
+	padding: 3px 5px;
+	margin: 0px 0px 10px 0px;
+	clear: both;
+}
+.eventBox {
+	margin: 0px 0px 15px;
+	width: 675px;
+	border-top: 2px solid #eee;
+	border-bottom: 3px solid #eee;
+	clear: both;
+}
+
+.eventBox dl dt {
+	margin: 0px;
+	padding: 10px 5px;
+	float: left;
+	width: 155px;
+	font-weight: bold;
+	color: #f39800;
+	display: block;
+	border-top: 1px solid #eee;
+	clear: both;
+}
+.eventBox dl dd {
+	float: right;
+	width: 500px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	background: url(/_shared/images/vLine_dot.png) repeat-y left top;
+	border-top: 1px solid #eee;
+	display: block;
+	font-size: 90%;
+	color: #666;
+}
+
+
+/* ================================================
+about
+================================================ */
+.about {
+	background: url(/_shared/images/neo_yatai/ttl_about.png) no-repeat left top;
+}
+
+#start {
+	margin: 15px 20px 20px 20px;
+}
+#start p {
+	font-size: 90%;
+	line-height: 140%;
+	color: #666;
+	margin-bottom: 15px;
+}
+#start ol {
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+#start ol li {
+	list-style: decimal outside;
+	font-size: 90%;
+	line-height: 140%;
+	color: #666;
+	margin-bottom: 5px;
+}
+#media {
+	margin-top: 15px;
+}
+
+.ttl_year {
+	font-weight: bold;
+	color: #FFF;
+	background: #f39800;
+	padding: 3px 5px;
+	margin: 0px 0px 10px;
+	clear: both;
+	text-align: right;
+}
+#media .other a {
+	background: url(/_shared/images/neo_yatai/ico_list_mark.png) no-repeat left center;
+	padding-left: 12px;
+}
+#media .other {
+	float: right;
+	font-size: 90%;
+}
+.mediaBox {
+	clear: both;
+	margin-bottom: 30px;
+}
+
+
+#paper {
+	background: url(/_shared/images/neo_yatai/icon_magazine.gif) no-repeat left top;
+	padding-left: 45px;
+	font-size: 120%;
+	font-weight: bold;
+	color: #666;
+	float: left;
+	margin-bottom: 5px;
+}
+#tv {
+	background: url(/_shared/images/neo_yatai/icon_tv.gif) no-repeat left top;
+	padding-left: 45px;
+	font-size: 120%;
+	font-weight: bold;
+	color: #666;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.mediainfo {
+	clear: both;
+	margin-bottom: 25px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.mediainfo h3 {
+	font-weight: bold;
+	color: #666;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #E3E3E3;
+}
+.mediainfo dl {
+	clear: both;
+	padding-top: 3px;
+	border-bottom: 1px solid #E3E3E3;
+	width: 660px;
+}
+.mediainfo dl dt {
+	font-size: 90%;
+	font-weight: bold;
+	color: #FFF;
+	padding: 2px 3px;
+	background: #F39800;
+	width: 55px;
+	text-align: center;
+	float: left;
+	margin: 3px 15px 5px 0px;
+}
+.mediainfo dl dd {
+	font-size: 90%;
+	padding: 3px;
+	float: left;
+	margin-bottom: 5px;
+	color: #666;
+	width: 570px;
+}
+
+
+.mediainfo dl:after,
+#nav-below:after{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+.mediainfo dl,
+#nav-below{
+    display:inline-block;
+    min-height:1%;  /* for IE 7*/
+}
+
+* html .mediainfo dl,
+* html #nav-below{height: 1%;}
+
+
+
+/* ================================================
+shop
+================================================ */
+#shop {
+	margin: 0px;
+	padding: 0px;
+	width: 680px;
+}
+.shopcar {
+	background: url(/_shared/images/neo_yatai/ttl_info.png) no-repeat left top;
+}
+#shop .ttl_category {
+	font-weight: bold;
+	color: #FFF;
+	background: #f39800;
+	padding: 3px 5px;
+	margin: 5px 0px 10px;
+	clear: both;
+}#shop .car {
+	margin-bottom: 15px;
+	background: url(/_shared/images/neo_yatai/lin_dot.png) repeat-x left bottom;
+	padding-bottom: 15px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.car h2 {
+	font-size: 110%;
+	font-weight: bold;
+	color: #F60;
+	border-bottom: 1px solid #E3E3E3;
+	margin-bottom: 10px;
+	padding-bottom: 2px;
+}
+.car .mainPic {
+	float: left;
+	width: 160px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+.car dl {
+	margin-bottom: 10px;
+}
+.car dl dt {
+	margin-bottom: 2px;
+}
+.car dl dd {
+	font-size: 90%;
+	color: #666;
+	margin-bottom: 5px;
+}
+.car table {
+	clear: both;
+	font-size: 80%;
+	color: #666;
+	border: 1px solid #E3E3E3;
+}
+#shop .car th,
+#shop .car td {
+	
+}
+#shop .car td {
+	padding: 2px;
+	text-align: center;
+	border-top: 1px solid #E3E3E3;
+	height: 18px;
+}
+
+/* ================================================
+contact
+================================================ */
+.contact {
+	background: url(/_shared/images/neo_yatai/ttl_contact.png) no-repeat left top;
+}

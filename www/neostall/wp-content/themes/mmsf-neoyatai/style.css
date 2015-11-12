@@ -1,0 +1,484 @@
+@charset "utf-8";
+/*
+Theme Name: MMSF NEOYATAI
+Template: mmsf-neoyatai-core
+Theme URI: http://www.w-tokyodo.com/neostall/
+Description: ネオ屋台村専用テーマ
+Author: mimosafa.
+Version: 0.0
+*/
+
+html {
+  min-height: 100%;
+  background-color: #f8f8f8;
+}
+body {
+  background-color: #fff;
+  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  letter-spacing: .1em;
+}
+
+/* ================================================
+areaSiteHeader & header-legacy container
+================================================ */
+#areaSiteHeader,
+#header-legacy {
+  overflow: hidden;
+}
+#areaSiteHeader .container,
+#header-legacy .container {
+  min-width: 980px;
+}
+/* ================================================
+areaSiteHeader
+================================================ */
+#areaSiteHeader {
+  background: url(./img/bg_head_top.png) left top repeat-x;
+  height: 30px;
+}
+#areaSiteHeader a {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: 100%;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+#wstdLogo {
+  margin-top: 3px;
+  float: left;
+}
+#wstdLogo a {
+  background-image: url(./img/ttl_site_header.png);
+  height: 22px;
+  width: 195px;
+}
+#areaSiteHeader ul {
+  float: right;
+  margin: 7px 0 9px;
+}
+#areaSiteHeader li {
+  float: left;
+  padding-left: 14px;
+  list-style: none;
+}
+#wstdCompany {
+  background-image: url(./img/btn_about_company.png);
+  width: 68px;
+  height: 14px;
+}
+#wstdContact {
+  background-image: url(./img/btn_contact.png);
+  width: 100px;
+  height: 14px;
+}
+
+/* ================================================
+header-legacy
+================================================ */
+#header-legacy {
+  background: url(./img/bg_wstd_nav_lgcy_neoyatai.png) left top repeat-x;
+}
+#siteid {
+  float: left;
+  padding: 17px 0 0;
+}
+#siteid > a,
+#siteid > h1 {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: 100%;
+  font-size: 1em;
+  margin: 0;
+  background: url(./img/ttl_neoyatai.png) left top no-repeat;
+  width: 241px;
+  height: 37px;
+}
+#header-legacy ul {
+  float: right;
+  margin-bottom: 0;
+}
+#header-legacy ul li {
+  float: left;
+  width: 120px;
+  height: 69px;
+  list-style: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+#header-legacy ul li a,
+#header-legacy ul li span {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: 100%;
+  width: 100%;
+  height: 100%;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+#header-legacy ul li:hover {
+  filter: alpha(opacity=70);
+  -moz-opacity: .7;
+  opacity: .7;
+}
+#header-legacy ul li.now-on-display {
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: 100%;
+  background-repeat: no-repeat;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+}
+#header-legacy ul li.now-on-display:hover {
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+}
+#btn-tokyodo {
+  background-image: url(./img/bg_wstd_nav_lgcy.png);
+}
+#btn-tokyodo > a {
+  background-image: url(./img/btn_tokyodo.png);
+}
+#btn-neostall {
+  background-image: url(./img/bg_wstd_nav_lgcy_neoyatai.png);
+}
+#btn-neostall > a {
+  background-image: url(./img/btn_neoyatai.png);
+}
+#btn-neostall.now-on-display {
+  background-image: url(./img/btn_neoyatai_on.png);
+  border-color: #ffa100;
+}
+#btn-neoponte {
+  background-image: url(./img/bg_wstd_nav_lgcy_neoponte.png);
+}
+#btn-neoponte > a {
+  background-image: url(./img/btn_neoponte.png);
+}
+#btn-sharyobu {
+  background-image: url(./img/bg_wstd_nav_lgcy_sharyobu.png);
+}
+#btn-sharyobu > a {
+  background-image: url(./img/btn_sharyobu.png);
+}
+
+/* =======================
+navbar
+======================= */
+.navbar {
+  border-radius: 0 !important;
+}
+@media (min-width: 768px) {
+  .navbar-collapse {
+    padding-left: 0; padding-right: 0
+  }
+}
+
+/* =======================
+wstd footer
+======================= */
+#wstd-footer {
+  margin-top: 60px;
+  padding-top: 70px;
+  background-color: #f8f8f8;
+}
+.home #wstd-footer {
+  margin-top: 0;
+}
+#wstd-footer-inner {
+  text-align: center;
+  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+#wstd-marks {
+  margin-bottom: 55px;
+}
+#wstd-marks a {
+  display: block;
+  height: 125px;
+  overflow: hidden;
+  font-size: 100px;
+  color: #eee;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+@media (max-width: 991px) {
+  #wstd-marks a {
+    font-size: 85px;
+  }
+}
+#wstd-marks a:hover {
+    color: #333;
+    text-decoration: none;
+}
+#wstd-footer-inner > nav,
+#wstd-footer-inner > p {
+  font-size: .85em;
+}
+#wstd-footer-inner > nav a {
+  color: #888;
+  letter-spacing: .1em;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+#wstd-footer-inner > nav a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+/* =======================
+contents
+======================= */
+.single > .navbar {
+  margin-bottom: 0;
+}
+.single > header {
+  padding: 20px 0;
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px #e7e7e7 solid;
+}
+.single > header h1 {
+  text-shadow: 0 0 1px;
+}
+#default-information .fa {
+  width: 21px;
+  text-align: center;
+}
+.tab-content {
+  padding-top: 20px;
+}
+
+/* =======================
+Calendar
+======================= */
+.calendar-wrapper {
+  margin-bottom: 50px;
+}
+.calendar-header {
+  display: none;
+}
+.calendar-empty,
+.calendar-past {
+  display: none;
+}
+@media (min-width: 992px) {
+  .calendar-wrapper {
+    text-align: center;
+    font-size: 12px;
+  }
+  .calendar-row:after {
+    clear: both;
+  }
+  .calendar-row:before,
+  .calendar-row:after {
+    display: table;
+    content: " ";
+  }
+  .calendar-header {
+    display: block;
+  }
+  .calendar-header > .calendar-row > div {
+    padding: 10px 0;
+    font-weight: 700;
+  }
+  .calendar-saturday {
+    color: #4682b4;
+  }
+  .calendar-sunday {
+    color: #ff6347;
+  }
+  .calendar-body > .calendar-row {
+    border-top: 1px solid #eee;
+  }
+  .calendar-row > div {
+    float: left;
+    width: 13.7857142857142857142857%;
+    margin-left: 0.5%;
+  }
+  .calendar-past,
+  .calendar-empty {
+    display: block;
+  }
+  .calendar-past > .calendar-date {
+    color: #a9a9a9;
+  }
+  .calendar-empty > .calendar-date {
+    color: #d3d3d3;
+  }
+  .calendar-today > .calendar-date {
+    background-color: #428bca;
+    border-radius: 2px;
+    color: #fff;
+  }
+  .calendar-today > .calendar-date > a {
+    color: #fff;
+  }
+  .calendar-date {
+    padding: 3px 0;
+    margin: 7px 0;
+  }
+  .calendar-date small,
+  .calendar-date span {
+    display: none;
+  }
+  .calendar-date > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+  .calendar-date > a:hover {
+    background-color: #eee;
+    border-radius: 2px;
+    color: #2a6496;
+  }
+  .calendar-today > .calendar-date > a:hover {
+    background-color: transparent;
+    color: #fff;
+  }
+  .calendar-inner {
+    padding: 5px;
+    min-height: 100px;
+  }
+}
+
+.calendar-inner {
+  position: relative;
+}
+.calendar-inner > * {
+  transition: opacity .3s;
+}
+.calendar-box.waiting .calendar-inner > * {
+  opacity: 0;
+}
+.calendar-box.waiting .calendar-inner:before {
+  position: absolute;
+  left: 50%;
+  margin-left: -0.55em;
+  content: '\f021';
+  font-family: FontAwesome;
+  font-size: 24px;
+  color: #ddd;
+  text-align: center;
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+
+/* Kitchencars */
+.calendar-inner > p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+/*
+.calendar-inner > p:hover {
+  overflow: visible;
+  z-index: 10;
+}
+.calendar-inner > p:hover > a {
+  background-color: #fff;
+}
+*/
+.calendar-inner > p > a {
+  text-decoration: none;
+}
+.calendar-inner .active-kitchencar > a {
+  color: #333;
+}
+.calendar-inner .pending-kitchencar > a {
+  color: #888;
+}
+.calendar-present > .calendar-inner .active-kitchencar:before {
+  content: "\f0d1";
+  font-family: FontAwesome;
+  margin-right: .4em;
+}
+.calendar-inner .absence-kitchencar > a {
+  color: #999;
+}
+.calendar-present > .calendar-inner .absence-kitchencar > a {
+  color: #f30;
+}
+.calendar-inner .absence-kitchencar > a > del {
+  color: #aaa;
+  font-size: .85em;
+}
+.calendar-past > .calendar-inner .active-kitchencar > a {
+  color: #aaa;
+}
+.calendar-past > .calendar-inner .pending-kitchencar {
+  display: none;
+}
+
+/* ==============
+
+============== */
+.neoyatai-teaser > div {
+  background-color: #3a5775;
+  height: 100%;
+  position: relative;
+}
+.neoyatai-teaser > div:before,
+.neoyatai-teaser > div:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 0;
+  right: 0;
+}
+.neoyatai-teaser > div:before {
+  border-left: 25px solid transparent;
+  border-top: 25px solid #fff;
+}
+.neoyatai-teaser > div:after {
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid #e7e7e7;
+}
+.neoyatai-teaser > div > div {
+  height: 100%;
+  padding: 15px;
+}
+.date {
+  text-align: center;
+  color: #fff;
+  border-bottom: solid 1px #eee;
+  margin-bottom: 0;
+}
+.date > .month {
+  font-size: 200%;
+}
+.date > .day {
+  font-weight: 700;
+  font-size: 370%;
+  line-height: 1;
+}
+.date > .dayname {
+  font-size: 178%;
+  letter-spacing: .15em;
+}
+.date > .num {
+  line-height: 1.75;
+  color: #eee;
+}
+
+.mock-table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+}
+.mock-table > div {
+  display: table-row;
+}
+.mock-table > div > div {
+  display: table-cell;
+  vertical-align: bottom;
+}
