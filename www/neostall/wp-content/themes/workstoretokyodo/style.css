@@ -1,0 +1,53 @@
+/**
+ * Theme Name: Workstore Tokyo Do Theme
+ * Version:    0.0.0
+ * Author:     Toshimich Mimoto
+ */
+
+/* ================================================
+areaSiteHeader
+================================================ */
+#areaSiteHeader {
+  background-color: #0068b7;
+  background: linear-gradient(#1a77be, #0f619f);
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: .1em;
+}
+#wstdLogo {
+  float: left;
+}
+#wstdLogo > a {
+  display: block;
+  height: 30px;
+  width: 232px;
+  background: url(./img/ttl_site_header-24.png) left center no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#wstdCompanyNav {
+  float: right;
+}
+#wstdCompanyNav > li {
+  padding-left: 14px;
+}
+#wstdCompanyNav > li > a {
+  color: #fff;
+}
+#wstdCompanyNav > li > a:hover,
+#wstdCompanyNav > li > a:focus {
+  text-decoration: none;
+}
+
+/* ================================================
+header-legacy
+================================================ */
+#header-legacy {
+  height: 69px;
+  background-color: #1f73b9;
+  background-image: linear-gradient(to bottom, #00499d 0%, #3184c3 93%, #0066b6 94%);
+}
