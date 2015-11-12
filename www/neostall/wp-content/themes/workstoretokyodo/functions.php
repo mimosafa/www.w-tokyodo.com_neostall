@@ -18,5 +18,6 @@ define( 'WSTD_THEME_VER', '0.0.0' );
  * @since 0.0.0
  */
 require_once 'inc/setup.php';
+require_once 'inc/functions.php';
 require_once 'inc/wstd.php';
 require_once 'inc/views.php';
