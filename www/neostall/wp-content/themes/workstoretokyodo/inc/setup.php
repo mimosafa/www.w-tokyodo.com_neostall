@@ -24,11 +24,15 @@ add_theme_support( 'post-thumbnails' );
  * Register & Enqueue Scripts
  *
  * @since 0.0.0
- *
- * @uses  WSTD\Scripts::init()
- * @see   inc/scripts.php
  */
-add_action( 'wp_enqueue_scripts', 'WSTD\\Scripts::init' );
+WSTD\Scripts::init();
+
+/**
+ * Initialize Workstore Tokyo Do Divisions
+ *
+ * @since 0.0.0
+ */
+WSTD\Divisions::init();
 
 /**
  * Class Loader

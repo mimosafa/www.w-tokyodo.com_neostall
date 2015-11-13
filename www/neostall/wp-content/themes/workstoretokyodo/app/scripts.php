@@ -68,8 +68,17 @@ class Scripts {
 	 */
 	private function __construct() {
 		$this->theme = get_stylesheet();
+		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue' ] );
+	}
+
+	/**
+	 * @access public
+	 *
+	 * @since 0.0.0
+	 */
+	public function enqueue() {
 		$this->register();
-		$this->enqueue();
+		wp_enqueue_style( $this->theme );
 	}
 
 	/**
@@ -80,15 +89,6 @@ class Scripts {
 	private function register() {
 		$this->register_themes();
 		$this->register_cdns();
-	}
-
-	/**
-	 * @access private
-	 *
-	 * @since 0.0.0
-	 */
-	private function enqueue() {
-		wp_enqueue_style( $this->theme );
 	}
 
 	/**

@@ -21,14 +21,14 @@
  * @since 0.0.0
  */
 ?><div id="areaSiteHeader">
-	<div class="container">
-		<div id="wstdLogo"><?php wstd_very_first_logo(); ?></div>
-		<ul class="list-inline" id="wstdCompanyNav">
+	<nav class="container">
+		<div class="pull-left" id="wstdLogo"><?php wstd_very_first_logo(); ?></div>
+		<ul class="pull-right list-inline" id="wstdCompanyNav">
 			<li><a href="/recruit"><i class="fa fa-child"></i> 採用情報</a></li>
 			<li><a href="/#company"><i class="fa fa-building-o"></i> 会社案内</a></li>
 			<li><a href=""><i class="fa fa-envelope"></i> お問い合わせ</a></li>
 		</ul>
-	</div>
+	</nav>
 </div>
 <?php
 /**
@@ -36,11 +36,53 @@
  *
  * @since 0.0.0
  */
-?><div id="header-legacy">
-	<div class="container">
-		<div id="siteid"><?php // wstd_header_site_id(); ?></div>
+?><div id="divisionNavBar">
+	<nav class="container">
+		<div id="siteid"><?php wstd_site_id(); ?></div>
 		<ul>
-			<?php // wstd_header_division_nav_lists(); ?>
+			<?php wstd_division_links( 'header' ); ?>
 		</ul>
-	</div>
+	</nav>
 </div>
+<?php
+/**
+ * Show Header Image, If Exists
+ *
+ * @since 0.0.0
+ */
+if ( wstd_has_header_image() ) {
+	/**
+	 * @todo
+	 */
+?>
+<div id="wstd-header-image"></div>
+<?php
+}
+/**
+ * Show Global Navigation, If Exists
+ *
+ * @since 0.0.0
+ */
+if ( wstd_has_global_nav() ) {
+	/**
+	 * @todo
+	 */
+?><nav class="navbar navbar-default" id="wstd-global-nav">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<?php wstd_global_nav_links(); ?>
+			</ul>
+			<?php wstd_global_nav_form(); ?>
+		</div>
+	</div>
+</nav><?php
+}

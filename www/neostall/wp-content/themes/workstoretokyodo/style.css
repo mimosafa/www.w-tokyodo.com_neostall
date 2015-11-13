@@ -5,6 +5,44 @@
  */
 
 /* ================================================
+(Division Colors)
+================================================ */
+#divisionNavBar,
+#btn-direct {
+  background-color: #1f73b9;
+  background-image: linear-gradient(to bottom, #00499d 0%, #3184c3 93%, #0066b6 94%);
+}
+body.division-neostall #divisionNavBar,
+#btn-neostall {
+  background-color: #f08a08;
+  background-image: linear-gradient(to bottom, #ed7900 0%, #f4ab31 93%, #f39700 94%);
+}
+body.division-neoponte #divisionNavBar,
+#btn-neoponte {
+  background-color: #1b972f;
+  background-image: linear-gradient(to bottom, #13861d 0%, #43b75f 93%, #14a73a 94%);
+}
+body.division-sharyobu #divisionNavBar,
+#btn-sharyobu {
+  background-color: #c02523;
+  background-image: linear-gradient(to bottom, #bb1913 0%, #cc4c4f 93%, #c02027 94%);
+}
+
+/* ================================================
+Top Navigations
+================================================ */
+/* @media (min-width: @screen-md-min) { */
+  #areaSiteHeader,
+  #divisionNavBar {
+    overflow: hidden;
+  }
+  #areaSiteHeader .container,
+  #divisionNavBar .container {
+    min-width: 980px;
+  }
+/* } */
+
+/* ================================================
 areaSiteHeader
 ================================================ */
 #areaSiteHeader {
@@ -24,13 +62,14 @@ areaSiteHeader
   display: block;
   height: 30px;
   width: 232px;
-  background: url(./img/ttl_site_header-24.png) left center no-repeat;
+  background: url(./images/ttl_site_header.png) left center no-repeat;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
 }
 #wstdCompanyNav {
   float: right;
+  margin-bottom: 0;
 }
 #wstdCompanyNav > li {
   padding-left: 14px;
@@ -44,10 +83,138 @@ areaSiteHeader
 }
 
 /* ================================================
-header-legacy
+divisionNavBar
 ================================================ */
-#header-legacy {
+#divisionNavBar {
   height: 69px;
-  background-color: #1f73b9;
-  background-image: linear-gradient(to bottom, #00499d 0%, #3184c3 93%, #0066b6 94%);
+}
+
+#siteid {
+  float: left;
+}
+#siteid > a,
+#siteid > h1 {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: 100%;
+  font-size: 1em;
+  margin: 0;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-image: url(./images/ttl_wstd.png);
+  width: 401px;
+  height: 69px;
+}
+body.division-direct #siteid > a,
+body.division-direct #siteid > h1 {
+  background-image: url(./images/ttl_direct.png);
+  width: 255px;
+}
+body.division-neostall #siteid > a,
+body.division-neostall #siteid > h1 {
+  background-image: url(./images/ttl_neostall.png);
+  width: 280px;
+}
+body.division-neoponte #siteid > a,
+body.division-neoponte #siteid > h1 {
+  background-image: url(./images/ttl_neoponte.png);
+  width: 237px;
+}
+body.division-sharyobu #siteid > a,
+body.division-sharyobu #siteid > h1 {
+  background-image: url(./images/ttl_sharyobu.png);
+  width: 223px;
+}
+
+#divisionNavBar ul {
+  float: right;
+  margin-bottom: 0;
+}
+#divisionNavBar ul > li {
+  float: left;
+  width: 120px;
+  height: 69px;
+}
+#divisionNavBar ul > li a {
+  -webkit-transition: all .3s;
+          transition: all .3s;
+}
+#divisionNavBar ul > li:hover a,
+#divisionNavBar ul > li:focus a {
+  filter: alpha(opacity=70);
+  -moz-opacity: .7;
+       opacity: .7;
+}
+#divisionNavBar ul > li a,
+#divisionNavBar ul > li.active {
+  display: block;
+  background-position: left top;
+  background-repeat: no-repeat;
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: 100%;
+}
+#divisionNavBar ul > li a {
+  width: 100%;
+  height: 100%;
+}
+#divisionNavBar ul > li.active {
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+}
+#btn-direct > a {
+  background-image: url(./images/btn_direct.png);
+}
+#btn-direct.active {
+  background-image: url(./images/btn_direct_on.png);
+  border-color: #0090ff;
+}
+#btn-neostall > a {
+  background-image: url(./images/btn_neostall.png);
+}
+#btn-neostall.active {
+  background-image: url(./images/btn_neostall_on.png);
+  border-color: #ffa100;
+}
+#btn-neoponte > a {
+  background-image: url(./images/btn_neoponte.png);
+}
+#btn-neoponte.active {
+  background-image: url(./images/btn_neoponte_on.png);
+  border-color: #00ff5d;
+}
+#btn-sharyobu > a {
+  background-image: url(./images/btn_sharyobu.png);
+}
+#btn-sharyobu.active {
+  background-image: url(./images/btn_sharyobu_on.png);
+  border-color: #ff2d34;
+}
+
+/* ================================================
+wstd-header-image
+================================================ */
+#wstd-header-image {
+  height: 400px;
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+body.division-neostall #wstd-header-image {
+  background-image: url(./images/default_header_neostall.jpg);
+}
+
+/* ================================================
+wstd-global-nav
+================================================ */
+#wstd-global-nav {
+  border-radius: 0;
+  border: none;
+}
+#wstd-global-nav .navbar-nav {
+  margin-left: -15px;
+}
+#wstd-global-nav .navbar-nav {
+  margin-left: -15px;
 }
