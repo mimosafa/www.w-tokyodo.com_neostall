@@ -1,0 +1,3 @@
+[submodule "www/neostall/wp-content/plugins/wp-mimosafa-libs"]
+	path = www/neostall/wp-content/plugins/wp-mimosafa-libs
+	url = git@github.com:mimosafa/wp-mimosafa-libs.git
