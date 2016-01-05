@@ -29,7 +29,7 @@ if ( 9 !== $phase ) :
         $car_img_html .= '<a class="modal" href="' . esc_url( $car_img_url ) . '">';
         $car_img_html .= '<img src="' . get_stylesheet_directory_uri() . '/images/white.gif" data-original="' . esc_url( $car_img[0] ) . '" width="88" height="66" class="lazy" />';
         $car_img_html .= '<noscript>';
-        $car_img_html .= '<img src="' . esc_url( $menu_img[0] ) . '" width="88" height="66" />';
+        $car_img_html .= '<img src="' . esc_url( $car_img[0] ) . '" width="88" height="66" />';
         $car_img_html .= '</noscript>';
         $car_img_html .= '</a>';
     } else {
@@ -49,7 +49,7 @@ if ( 9 !== $phase ) :
         $item_img_html .= '<a class="modal" href="' . esc_url( $item_img_url ) . '">';
         $item_img_html .= '<img src="' . get_stylesheet_directory_uri() . '/images/white.gif" data-original="' . esc_url( $item_img[0] ) . '" width="88" height="66" class="lazy" />';
         $item_img_html .= '<noscript>';
-        $item_img_html .= '<img src="' . esc_url( $menu_img[0] ) . '" width="88" height="66" />';
+        $item_img_html .= '<img src="' . esc_url( $item_img[0] ) . '" width="88" height="66" />';
         $item_img_html .= '</noscript>';
         $item_img_html .= '</a>';
     } else {

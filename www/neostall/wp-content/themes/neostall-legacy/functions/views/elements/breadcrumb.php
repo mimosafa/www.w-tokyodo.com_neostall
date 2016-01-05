@@ -8,7 +8,7 @@ function mmsf_breadcrumb( $sep = ' &gt; ' ) {
 		$str .= "\n" . '<div class="breadcrumb">' . "\n";
 		$str .= sprintf( '<p><a href="%s">ネオ屋台村</a>%s', home_url(), $sep );
 		if ( is_post_type_archive() ) {
-			$str .= esc_html( get_post_type_object( get_post_type() )->label );
+			$str .= esc_html( get_post_type_object( get_query_var( 'post_type' ) )->label );
 		} elseif ( is_tax( 'series' ) ) {
 			$link = get_post_type_archive_link( 'event' );
 			$str .= sprintf( '<a href="%s">イベント</a>%s', $link, $sep );

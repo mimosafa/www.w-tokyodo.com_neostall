@@ -1,16 +1,6 @@
 <?php
 get_header();
 the_post();
-
-// Setting Scheduled Kitchencars List
-/*
-if ( get_field( 'list' ) ) {
-    while ( has_sub_field( 'list' ) ) {
-        $dayname = ucfirst ( esc_html( get_sub_field( 'dayname' ) ) );
-        $lists[$dayname] = get_sub_field( 'kitchencars' );
-    }
-}
-*/
 $_weeks = array( 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday' );
 foreach ( $_weeks as $_dayname ) {
     if ( $kitchencar_ids = get_post_meta( $id, $_dayname, true ) ) {
@@ -152,7 +142,7 @@ if ( $content_array ) :
         $managements = array();
         $space_off = false;
 
-        if ( $management_posts = $array['managements'] ) {
+        if ( isset( $array['managements'] ) && $management_posts = $array['managements'] ) {
             foreach ( $management_posts as $management_post ) {
                 $m_type = $management_post->type;
                 if ( 'off' == $m_type ) {
@@ -163,7 +153,7 @@ if ( $content_array ) :
             }
         }
 
-        if ( $objs = $array['activities'] ) {
+        if ( isset( $array['activities'] ) && $objs = $array['activities'] ) {
             $ttl_day .= date( 'n月j日 ', $ts ) . __( $daynameId );
         } else {
             $objs = $array['lists'];
@@ -214,7 +204,7 @@ foreach ( $content_array as $ts => $array ) {
     $dayStr = date( 'n月j日', $ts ) . ' (' .  mb_substr( __( $array['dayname'] ), 0, 1 ) . ')';
     $contents = '';
     $attr_str = '';
-    if ( $managements = $array['managements'] ) {
+    if ( isset( $array['managements'] ) && $managements = $array['managements'] ) {
         foreach ( $managements as $management ) {
             $contents .= $management->post_excerpt;
             $contents .= '<br>';
@@ -222,7 +212,7 @@ foreach ( $content_array as $ts => $array ) {
                 $attr_str .= ' style="background-color:#f5f5f5;"';
         }
     }
-    if ( $activities = $array['activities'] ) {
+    if ( isset( $array['activities'] ) && $activities = $array['activities'] ) {
         foreach ( $activities as $activity ) {
             $name = '';
             if ( $kitchencar_id = absint( $activity->actOf ) ) {

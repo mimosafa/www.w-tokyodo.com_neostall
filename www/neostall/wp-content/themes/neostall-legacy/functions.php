@@ -1,7 +1,4 @@
 <?php
-
-require_once( STYLESHEETPATH . '/functions/dev.php' );
-
 /***************************
  * REQUIRE_ONCE FUNCTIONS
  ***************************/

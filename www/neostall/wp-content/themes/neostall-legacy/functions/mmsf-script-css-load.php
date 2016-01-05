@@ -52,5 +52,5 @@ if ( !is_admin() ) {
             wp_enqueue_script( 'space' );
         }
     }
-    add_action( 'wp_print_scripts', 'neostall_enqueue_script' );
+    add_action( 'wp_enqueue_scripts', 'neostall_enqueue_script' );
 }

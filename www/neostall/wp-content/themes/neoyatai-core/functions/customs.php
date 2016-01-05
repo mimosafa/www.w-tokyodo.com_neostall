@@ -306,16 +306,16 @@ if ( ! function_exists( 'news_custom_post_type' ) ) {
 /***************************
  * REGISTER POST TYPES
  ***************************/
+/*
 add_action( 'init', 'news_custom_post_type' );
 add_action( 'init', 'vendor_custom_post_type' );
 add_action( 'init', 'kitchencar_custom_post_type' );
 add_action( 'init', 'menu_item_custom_post_type' );
-add_action( 'init', 'season_custom_post_type' );
 add_action( 'init', 'event_custom_post_type' );
 add_action( 'init', 'space_custom_post_type' );
-add_action( 'init', 'site_custom_post_type' );
 add_action( 'init', 'activity_custom_post_type' );
 add_action( 'init', 'management_custom_post_type' );
+*/
 
 /***********************
  * Define TAXONOMIES
@@ -359,6 +359,8 @@ if ( ! function_exists( 'menu_genre_custom_taxonomy' ) ) {
 /***************************
  * REGISTER TAXONOMIES
  ***************************/
+/*
 add_action( 'init', 'series_custom_taxonomy' );
 add_action( 'init', 'region_custom_taxonomy' );
 add_action( 'init', 'menu_genre_custom_taxonomy' );
+*/

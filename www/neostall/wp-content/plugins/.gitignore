@@ -1,9 +1,5 @@
 /*
 !/.gitignore
+!/neostall/
 !/wp-mimosafa-libs
-!/0-mmsf-debug-var/
-!/mmsf-custom-class/
 !/mmsf-theme-switch/
-!/neostall-csv-exporter/
-!/neostall-theme-switcher/
-!/settings-page-helper/

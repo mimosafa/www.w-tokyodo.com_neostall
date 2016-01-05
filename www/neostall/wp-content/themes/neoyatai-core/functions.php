@@ -1,14 +1,8 @@
 <?php
 
 /****
- * SETTING DEFAULT TIMEZONE
- **/
-date_default_timezone_set( 'Asia/Tokyo' );
-
-/****
  * REQUIRE PHPs
  **/
-require_once( TEMPLATEPATH . '/functions/customs.php' );
 require_once( TEMPLATEPATH . '/functions/scripts-styles.php' );
 require_once( TEMPLATEPATH . '/functions/queries.php' );
 require_once( TEMPLATEPATH . '/functions/functions.php' );
@@ -18,14 +12,6 @@ require_once( TEMPLATEPATH . '/functions/edit-form-fields.php' );
  * ADD_THEME_SUPPORT
  **/
 add_theme_support( 'post-thumbnails' );
-
-/****
- * redirect after login
- **/
-function neoyatai_login_redirect() {
-    return home_url();
-}
-//add_filter( 'login_redirect', 'neoyatai_login_redirect' );
 
 /****
  * カスタム投稿タイプのリライトルール -> 参考: http://blog.ext.ne.jp/?p=1416
