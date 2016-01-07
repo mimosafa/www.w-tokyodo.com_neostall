@@ -1,0 +1,13 @@
+{
+
+	"name": "kitchencar",
+
+	"repository_type": "post_type",
+
+	"repository_args":
+		{
+			"public": true,
+			"has_archive": true
+		}
+
+}
