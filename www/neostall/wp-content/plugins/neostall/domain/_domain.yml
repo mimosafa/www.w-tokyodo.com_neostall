@@ -1,0 +1,22 @@
+#
+#
+#
+namespace: Neostall
+prefix: neostall_
+
+#
+#
+#
+domains:
+  - kitchencar
+  - vendor
+  - space
+  - event
+  - menu
+
+#
+#
+#
+autoload: ''
+
+#

@@ -1,0 +1,5 @@
+repository: post_type
+
+post_type_arguments:
+  public: true
+  has_archive: true
