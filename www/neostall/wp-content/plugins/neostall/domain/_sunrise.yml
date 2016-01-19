@@ -1,0 +1,68 @@
+# prefix: 
+
+#
+# Custom post types.
+#
+post_types:
+
+  kitchencar:
+    label: キッチンカー
+    public: true
+    has_archive: true
+
+  vendor:
+    label: 事業者
+    show_ui: true
+    menu_icon: dashicons-store
+
+  space:
+    label: ランチスペース
+    public: true
+    has_archive: true
+    menu_icon: dashicons-location-alt
+
+  event:
+    label: イベント
+    public: true
+    has_archive: true
+    menu_icon: dashicons-palmtree
+
+  management:
+    label: 管理情報
+    public: true
+
+  news:
+    label: ニュース
+    public: true
+    has_archive: true
+
+  menu:
+    label: 提供商品
+    alias: menu_item
+    show_ui: true
+    menu_icon: dashicons-carrot
+
+#
+# Custom taxonomies.
+#
+taxonomies:
+
+  region:
+    label: 地域
+    hierarchical: true
+    object_type:
+      - space
+      - event
+
+  series:
+    label: イベントシリーズ
+    hierarchical: false
+    object_type:
+      - event
+
+  genre:
+    label: ジャンル
+    hierarchical: false
+    object_type:
+      - vendor
+      - menu

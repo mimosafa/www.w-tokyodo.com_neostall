@@ -6,14 +6,6 @@ if ( ! is_admin() ) :
 
     // Scripts
     function core_register_scripts() {
-        // replace jQuery CDN
-        wp_deregister_script( 'jquery' );
-        wp_register_script(
-            'jquery',
-            '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js',
-            array(),
-            '1.10.2'
-        );
         // Google Maps API v3 & gmaps.js
         wp_register_script( // Google Maps API v3
             'google_maps_api',
@@ -74,7 +66,7 @@ if ( ! is_admin() ) :
         }
         wp_enqueue_script( 'neoyatai_core' );
     }
-    add_action( 'wp_print_scripts', 'core_print_script', 49 );
+    add_action( 'wp_enqueue_scripts', 'core_print_script', 49 );
 
     // Styles
     function core_register_styles() {
@@ -88,6 +80,6 @@ if ( ! is_admin() ) :
     function core_print_styles() {
         core_register_styles();
     }
-    add_action( 'wp_print_styles', 'core_print_styles', 49 );
+    add_action( 'wp_enqueue_styles', 'core_print_styles', 49 );
 
 endif;

@@ -1,0 +1,14 @@
+{
+    "name": "mimosafa/wp-common",
+    "type": "library",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Toshimichi Mimoto",
+            "email": "mimosafa@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    }
+}

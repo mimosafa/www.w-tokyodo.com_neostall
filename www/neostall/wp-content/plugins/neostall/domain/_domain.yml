@@ -1,18 +1,15 @@
 #
 #
 #
-namespace: Neostall
-prefix: neostall_
+namespace: neostall
 
 #
 #
 #
 domains:
   - kitchencar
-  - vendor
   - space
   - event
-  - menu
 
 #
 #

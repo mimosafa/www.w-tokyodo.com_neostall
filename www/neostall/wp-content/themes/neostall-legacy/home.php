@@ -79,6 +79,7 @@ if ( $events->have_posts() ) :
 </li>
 <?php
 	endwhile;
+	wp_reset_postdata();
 else : ?>
 <li>現在予定されているイベントはありません</li><?php
 endif; ?>
@@ -89,21 +90,9 @@ endif; ?>
 <h3 class="homeH3">News</h3>
 <ul class="homeUl">
 <?php
-$ns_args = array(
-	'post_type' => array( 'news', 'management' ),
-	'posts_per_page' => 10,
-	'meta_query' => array(
-		array(
-            'key' => 'publication',
-            'value' => date_i18n( 'Y-m-d H:i:s' ),
-            'compare' => '<=',
-            'type' => 'DATETIME'
-        )
-	)
-);
-$news = new WP_Query( $ns_args );
-if ( $news->have_posts() ) :
-	while ( $news->have_posts() ) : $news->the_post();
+
+if ( have_posts() ) :
+	while ( have_posts() ) : the_post();
 		$link = esc_url( get_permalink() ); ?>
 <li>
   <a href="<?php echo $link; ?>">
@@ -116,65 +105,6 @@ endif;
 ?>
 </ul><!-- /.homeUl -->
 </div><!-- /.clmn -->
-<?php /*
-<div class="clmn">
-<h3 class="homeH3">Twitter</h3>
-<ul class="homeUl">
-<li>読み込み中...</li>
-</ul>
-</div>
-*/ ?>
-
-<?php /* ?>
-<div class="column">
-<p class="label"><span class="orange">イベント</span></p>
-<div class="columnInner">
-<h2><a href="http://www.w-tokyodo.com/neostall/series/reds"><img class="alignleft size-full wp-image-1523" title="浦和レッズ ホームゲーム" alt="" src="http://www.w-tokyodo.com/neostall/wp-content/uploads/2010/07/reds.png" width="206" height="85"></a></h2>
-<p>ネオ屋台村が出店する、「浦和レッズ ホームゲーム @埼玉スタジアム２００２」特設ページです。</p>
-</div>
-</div>
-
-<div class="column">
-<p class="label"><span class="orange">イベント</span></p>
-<div class="columnInner">
-<h2><a href="http://www.w-tokyodo.com/neostall/series/ardija"><img class="alignleft size-full wp-image-1523" title="大宮アルディージャ ホームゲーム" alt="" src="http://www.w-tokyodo.com/neostall/wp-content/uploads/2010/07/ardija.png" width="206" height="85"></a></h2>
-<p>ネオ屋台村が出店する、「大宮アルディージャ ホームゲーム @NACK5スタジアム大宮」特設ページです。</p>
-</div>
-</div>
-
-<div class="column">
-<p class="label"><span class="orange">お知らせ</span></p>
-<div class="columnInner">
-<h2><a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/neoyatai');" href="http://twitter.com/neoyatai"><img class="aligncenter size-full wp-image-1488" title="ネオ屋台村 ツイッター" alt="ネオ屋台村 ツイッター" src="http://www.w-tokyodo.com/neostall/wp-content/uploads/2010/07/twitterIcon1.png" width="206" height="48"></a></h2>
-<p>ネオ屋台村® の公式ツイッターアカウントです。ネオ屋台村に関するツイートにはハッシュタグ”#neoyatai”をつけてつぶやいてください。<!-- ホームページ左側に表示されます(^^) --> どうぞフォローをお願いいたします！</p>
-</div>
-</div>
-
-<!-- news -->
-<div id="news">
-<h2><img src="/_shared/images/neo_yatai/ttl_news.png" width="52" height="17" alt="News" /></h2>
-<dl>
-<?php
-if ( have_posts() ) :
-    while ( have_posts() ) : the_post();
-?>
-<dt><?php the_time('Y年 n月 j日'); ?></dt>
-<dd><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></dd>
-<?php
-    endwhile;
-else :
-?>
-<dt><?php echo date_i18n( 'Y年 n月 j日' ); ?></dt>
-<dd>現在、NEWS記事はありません</dd>
-<?php
-endif;
-?>
-</dl>
-</div><!-- /news -->
-<p class="linkMark">
-  <a href="<?php echo get_post_type_archive_link( 'news' ); ?>">すべてのニュース</a>
-</p>
-<?php */ ?>
 </div><!-- /main -->
 <?php
 get_sidebar();

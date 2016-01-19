@@ -1,0 +1,16 @@
+{
+    "name": "mimosafa/wp-mimosafa-repository",
+    "description": "",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Toshimichi Mimoto",
+            "email": "mimosafa@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "mustangostang/spyc": "~0.5"
+    }
+}
